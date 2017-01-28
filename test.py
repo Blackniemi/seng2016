@@ -10,7 +10,7 @@ class TestSuite(unittest.TestCase):
         app = FizzBuzz()
 
 
-        self.failIf(app.calc(1) != 1)
+        self.failIf(app.calc(1) != '1 is a prime')
 
     def test_run(self):
         output = StringIO()
