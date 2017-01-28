@@ -22,7 +22,22 @@ class FizzBuzz():
 
     # Seems to give correct values. Tested with 1 and 2.
     def calc(self, i):
+
+        prime = self.checkPrime(i)
+
+        if(prime):
+            return (str(i) + ' is a prime')
+
         return i
+
+    def checkPrime(self, i):
+
+        for x in range(2, i):
+            if(i % x == 0):
+                return False
+                
+        return True
+
 
 if __name__ == "__main__":
     app = FizzBuzz()
