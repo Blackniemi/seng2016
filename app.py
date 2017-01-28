@@ -22,7 +22,19 @@ class FizzBuzz():
 
     # Seems to give correct values. Tested with 1 and 2.
     def calc(self, i):
-        return i
+
+        div_3 = (i % 3 == 0)
+        div_5 = (i % 5 == 0)
+
+        if(div_5 and div_3):
+            return 'FizzBuzz'
+        elif(div_3):
+            return 'Fizz'
+        elif(div_5):
+            return 'Buzz'
+        else:
+            return i
+            
 
 if __name__ == "__main__":
     app = FizzBuzz()
